@@ -8,7 +8,7 @@ void setup() {
   pinMode(10, INPUT_PULLUP);
   pinMode(11, INPUT_PULLUP);
   pinMode(12, INPUT_PULLUP);
-  delay(10);
+  delay(20);
 
   int address = 127 - (digitalRead(9)*8 + digitalRead(10)*4 + digitalRead(11)*2 + digitalRead(12)*1); // 111 xxxx als adres
   
