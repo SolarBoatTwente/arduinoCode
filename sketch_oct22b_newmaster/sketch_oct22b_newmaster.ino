@@ -26,7 +26,7 @@ word slaveScanner(){
  
     if (error == 0)
     {
-      slave += 1 << (address -112); 
+      slave += 1 << (address -112); //Do a bitshift to create an array of slaves shown by 0s and 1s
     }
   }
 
@@ -36,7 +36,7 @@ word slaveScanner(){
 
 
 void loop() {
-  
+  //Still have to implement slaves
   x = 0;
   
   Wire.beginTransmission(BASE +1); // transmit to device #8
@@ -45,7 +45,7 @@ void loop() {
   Wire.beginTransmission((BASE+2));
   Wire.write(x);
   Wire.endTransmission();
-
+  //delay to stop the system from over occupying the I2C bus
   delay(100);
   
 
