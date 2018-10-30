@@ -45,7 +45,7 @@ void loop() {
   Wire.endTransmission();    // stop transmitting
   Wire.beginTransmission((BASE+2));
   Wire.write(x);
-  Wire.endTransmission();
+  Wire.endTransmission(); //Not difficult
   //delay to stop the system from over occupying the I2C bus
 
   delay(100);
